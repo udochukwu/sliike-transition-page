@@ -1,4 +1,30 @@
 {
-  "title":"Sliike is upgrading..."
-
-  }
+  "title": "Sliike is upgrading...",
+  "client": "Are you searching for beauty services that match your looks & personality?",
+  "beautician": "Are you a Beautician looking for an online marketplace to GROW your business?",
+  "back": "We will be back in xx days xx hours xx minutes xx seconds",
+  "stayConnected":"Stay connected and receive a savings of 20% on your first transaction when we return",
+  "email": "email",
+  "city": "city",
+  "persona": "Persona",
+  "type": "type",
+  "demography": "demography",
+  "personaClient": "Client/User",
+  "personaBeautician": "Beautician",
+  "independent": "independent",
+  "saloonOwner":"Salon Owner",
+  "afroCaribbean": "Afro-Caribbean",
+  "hispanicLatino": "Hispanic or Latino",
+  "indian": "Indian (Indigenous People)",
+  "asian": "Asian (Canadian)",
+  "white": "White (Canada – not Hispanic/Latino)",
+  "mixed": "Mixed race (Canada – Hispanic/Latino)",
+  "notShare": "Prefer not to share",
+  "submit": "submit",
+  "expect": "What to EXPECT on our UPGRADED APP",
+  "thankYou": "Thank you for sharing your contact details with us! We will keep you informed.",
+  "marketPlace":"Online marketplace for beauty services",
+  "engaging":"More engaging beauty features......",
+  "frictionLess":"Frictionless transactions between beauticians and clients",
+  "moreClients":"More clients for Independent beauticians and salon owners"
+}

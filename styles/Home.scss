@@ -15,12 +15,13 @@ main {
     display: block;
   }
   @media (min-width: 960px) {
-    max-height: 850px;
+    max-height: 900px;
     max-width: 1440px;
   }
   .section-one {
     overflow: hidden;
     position: relative;
+    padding: 15px;
     padding-top: 201px;
     flex: 1;
     background: url(/img/fashion.png), rgb(10, 8, 10);
@@ -76,6 +77,7 @@ main {
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
       }
     }
     .open {
@@ -89,7 +91,7 @@ main {
     .popup {
       padding-top: 68px;
       position: absolute;
-      top: 150px;
+      top: 20px;
       background: url(/img/woman.png), rgb(10, 8, 10);
       background-blend-mode: exclusion;
       background-size: 400px 689px;
@@ -149,6 +151,7 @@ main {
             box-sizing: border-box;
             box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.08);
             border-radius: 15px;
+            width: 100%;
             .expectations {
               font-family: Spartan;
               font-style: normal;
@@ -193,6 +196,7 @@ main {
           display: flex;
           justify-content: center;
           align-items: center;
+          cursor: pointer;
         }
       }
     }
@@ -204,6 +208,7 @@ main {
     text-align: center;
     flex: 1;
     background: linear-gradient(139.7deg, #dd6a02 46.22%, #dd8502 101.17%);
+    padding: 20px;
     .logo {
       margin-bottom: 32px;
     }

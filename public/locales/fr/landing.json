@@ -1,3 +1,30 @@
 {
-"title":"Sliike is upgrading..."
-}
+    "title": "Sliike fait la mise à niveau......",
+    "client": "Êtes-vous à la recherece de services de beauté qui correspondent à votre look et personalité?",
+    "beautician": "Êtes-vous un Esthéticien à la recherche d'un marché en ligne pour FAIRE CROÎTRE votre service?",
+  "back": "Nous serons de retour dans xx jours xx heures xx minutes xx secondes",
+  "stayConnected":"Restez connecté et économisez 20% sur votre première transaction à notre retour",
+  "email": "Courriel",
+  "city": "Ville",
+  "persona": "Persona",
+  "type": "type",
+  "demography": "Demographie",
+  "personaClient": "Client",
+  "personaBeautician": "Esthéticien",
+  "independent": "Autonome",
+  "saloonOwner":"Propriétaire",
+  "afroCaribbean": "Afro-caribéenne",
+  "hispanicLatino": "Hispanique ou latino-américain",
+  "indian": "Indiens (peuples autochtones)",
+  "asian": "Asiatique (Canadien)",
+  "white": "Blanc (Canada – pas hispanique/latino-américain)",
+  "mixed": "Race mixte (Canada – hispanique/latino-américain)",
+  "notShare": "Préfère ne pas partager",
+  "submit": "Soumettre",
+  "expect": "À quoi S’ATTENDRE sur notre NOUVELLE APP",
+  "thankYou": "Merci d’avoir partagé vos coordonnées avec nous! Nous resterons en contact.",
+  "marketPlace":"Marché en ligne pour les services de beauté",
+  "engaging":"Nouvelles fonctionnalités intéressantes de beauté",
+  "frictionLess":"Transactions sans friction entre les esthéticiens et les clients",
+  "moreClients":"Plus de clients pour Les Esthéticiens Autonomes et Propriétaires de Salons"
+  }

@@ -90,14 +90,12 @@ const Home = () => {
           <div className='section-one'>
             <div>
               <div className={'first-write-up'}>{t('title')}</div>
-              <div className={'second-write-up'}>
-                We will be back in XX days XX hours XX mins XX sec
-              </div>
+              <div className={'second-write-up'}>{t('back')}</div>
             </div>
             <div className={'buttonCon'}>
               <button onClick={() => setOpen(true)} className={'Button'}>
                 <div>
-                  Tap for more
+                  <div>Tap for more</div>
                   <ArrowDownwardIcon />
                 </div>
               </button>
@@ -120,7 +118,7 @@ const Home = () => {
                         height='13px'
                       />
                       <span className={'expectations'}>
-                        Online marketplace for beauty services and products.
+                      {t('marketPlace')}
                       </span>
                     </div>
                     <div className={'components'}>
@@ -131,8 +129,7 @@ const Home = () => {
                         height='13px'
                       />
                       <span className={'expectations'}>
-                        More clients for Independent beauticians and salon
-                        owners
+                      {t('moreClients')}
                       </span>
                     </div>
                     <div className={'components'}>
@@ -143,8 +140,7 @@ const Home = () => {
                         height='13px'
                       />
                       <span className={'expectations'}>
-                        Frictionless transactions between beauticians and
-                        clients
+                      {t('frictionLess')}
                       </span>
                     </div>
                     <div className={'components'}>
@@ -155,7 +151,7 @@ const Home = () => {
                         height='13px'
                       />
                       <span className={'expectations'}>
-                        A platform of Afro-caribbean community and more
+                      {t('engaging')}
                       </span>
                     </div>
                   </div>
@@ -166,7 +162,7 @@ const Home = () => {
                 <button onClick={() => setOpen(false)} className={'Button'}>
                   <div>
                     <ArrowUpwardIcon />
-                    <div>Tap for more</div>
+                    <div>Back to Top</div>
                   </div>
                 </button>
               </div>
@@ -189,9 +185,7 @@ const Home = () => {
                   width='8px'
                   height='8px'
                 />
-                <span className={'contents'}>
-                  Are you looking for beauty services and products?
-                </span>
+                <span className={'contents'}>{t('client')}</span>
               </div>
               <div>
                 <Image
@@ -200,10 +194,7 @@ const Home = () => {
                   width='8px'
                   height='8px'
                 />
-                <span className={'contents'}>
-                  Are you a Beautician looking to sell your services and
-                  products?
-                </span>
+                <span className={'contents'}>{t('beautician')}</span>
               </div>
 
               <div className={'formContainer'}>
@@ -218,26 +209,27 @@ const Home = () => {
                         className='success-img'
                       />
                       <p className='success-text'>
-                        Thank you for sharing your contact details with us! We
-                        will keep you informed.
+                        {t('thankYou')}
                       </p>
                     </div>
                   ) : (
                     <>
-                      <div className={'formWriteUp'}>
+                      {/* <div className={'formWriteUp'}>
                         <span className={'writeUpColor'}>Stay connected </span>
                         and recieve a savings of{' '}
                         <span className={'writeUpColor'}>20%</span> on your
                         first transaction when we return
+                        </div> */}
+                      <div className={'formWriteUp'}>
+                        {t('stayConnected')}
                       </div>
                       <Divider />
                       <br />
                       <div>
                         <form onSubmit={handleSubmit(onSubmit)}>
-                          <Box className="mb-8">
+                          <Box className='mb-8'>
                             <TextField
-                              id='standard-basic'
-                              label='Email'
+                              label={t('email')}
                               variant='standard'
                               sx={{ minWidth: 335 }}
                               {...register('email')}
@@ -246,10 +238,9 @@ const Home = () => {
                             />
                           </Box>
 
-                          <Box className="mb-8">
+                          <Box className='mb-8'>
                             <TextField
-                              id='standard-basic'
-                              label='City'
+                              label={t('city')}
                               variant='standard'
                               sx={{ minWidth: 335 }}
                               {...register('city')}
@@ -260,21 +251,20 @@ const Home = () => {
                           <FormControl
                             variant='standard'
                             sx={{ m: 1, minWidth: 335, margin: 0 }}
-                              error={!!errors?.persona}
-                              className="mb-8"
+                            error={!!errors?.persona}
+                            className='mb-8'
                           >
                             <InputLabel id='demo-simple-select-standard-label'>
-                              Persona
+                            {t('persona')}
                             </InputLabel>
                             <Select
-                              labelId='demo-simple-select-standard-label'
                               className='text-align-left'
                               {...register('persona')}
                               error={!!errors?.persona?.message}
                             >
-                              <MenuItem value={'client'}>Client/User</MenuItem>
+                              <MenuItem value={'client'}>{t('personaClient')}</MenuItem>
                               <MenuItem value={'beautician'}>
-                                Beautician
+                              {t('personaBeautician')}
                               </MenuItem>
                             </Select>
                             {!!errors?.persona && (
@@ -287,23 +277,22 @@ const Home = () => {
                             <FormControl
                               variant='standard'
                               sx={{ m: 0.5, minWidth: 335, margin: 0 }}
-                                error={!!errors?.type}
-                                className="mb-8"
+                              error={!!errors?.type}
+                              className='mb-8'
                             >
                               <InputLabel id='demo-simple-select-standard-label'>
-                                Type
+                              {t('type')}
                               </InputLabel>
                               <Select
-                                labelId='demo-simple-select-standard-label'
                                 className='text-align-left'
                                 {...register('type')}
                                 error={!!errors?.type?.message}
                               >
                                 <MenuItem value={'Independent'}>
-                                  Independent
+                                {t('independent')}
                                 </MenuItem>
                                 <MenuItem value={'Salon Owner'}>
-                                  Salon Owner
+                                {t('saloonOwner')}
                                 </MenuItem>
                               </Select>
                               {!!errors?.type && (
@@ -317,11 +306,11 @@ const Home = () => {
                           <FormControl
                             variant='standard'
                             sx={{ m: 1, minWidth: 335, margin: 0 }}
-                              error={!!errors?.demography}
-                              className="mb-8"
+                            error={!!errors?.demography}
+                            className='mb-8'
                           >
                             <InputLabel id='demo-simple-select-standard-label'>
-                              Demography
+                            {t('demography')}
                             </InputLabel>
                             <Select
                               labelId='demo-simple-select-standard-label'
@@ -330,29 +319,29 @@ const Home = () => {
                               className='text-align-left'
                             >
                               <MenuItem value={'Afro-Caribbean'}>
-                                Afro-Caribbean
+                              {t('afroCaribbean')}
                               </MenuItem>
                               <MenuItem value={'Hispanic or Latino'}>
-                                Hispanic or Latino
+                              {t('hispanicLatino')}
                               </MenuItem>
                               <MenuItem value={'Indian (Indigenous People)'}>
-                                Indian (Indigenous People)
+                              {t('indian')}
                               </MenuItem>
                               <MenuItem value={'Asian (Canadian)'}>
-                                Asian (Canadian)
+                                  {t('asian')}
                               </MenuItem>
                               <MenuItem
                                 value={'White (Canada – not Hispanic/Latino)'}
                               >
-                                White (Canada – not Hispanic/Latino)
+                                {t('white')}
                               </MenuItem>
                               <MenuItem
                                 value={'Mixed race (Canada – Hispanic/Latino)'}
                               >
-                                Mixed race (Canada – Hispanic/Latino)
+                              {t('mixed')}
                               </MenuItem>
                               <MenuItem value={'Prefer not to share'}>
-                                Prefer not to share
+                              {t('notShare')}
                               </MenuItem>
                             </Select>
                             {!!errors?.demography?.message && (
@@ -363,7 +352,7 @@ const Home = () => {
                           </FormControl>
                           <input
                             type='submit'
-                            value='SUBMIT'
+                            value={t('submit')}
                             className={'subBotton'}
                           />
                         </form>
@@ -375,7 +364,7 @@ const Home = () => {
 
               <div className={'socialMeadiaCon'}>
                 <div className={'socialMeadia'}>
-                  <a>
+                  <a href="https://www.facebook.com/Sliikeapp" target="_blank" rel="noreferrer">
                     <Image
                       src='/img/Facebooks.svg'
                       alt='sliike Logo'
@@ -383,7 +372,8 @@ const Home = () => {
                       height='35px'
                     />
                   </a>
-                  <a>
+                  <a href="https://instagram.com/sliike.app?utm_medium=copy_link" target="_blank" rel="noreferrer">
+
                     <Image
                       src='/img/Instagram_white.svg'
                       alt='sliike Logo'
@@ -391,7 +381,8 @@ const Home = () => {
                       height='35px'
                     />
                   </a>
-                  <a>
+                  <a href="#" target="_blank" rel="noreferrer">
+
                     <Image
                       src='/img/Twitters.svg'
                       alt='sliike Logo'
@@ -399,7 +390,7 @@ const Home = () => {
                       height='35px'
                     />
                   </a>
-                  <a>
+                  <a href="#" target="_blank" rel="noreferrer">
                     <Image
                       src='/img/TikTok.svg'
                       alt='sliike Logo'
@@ -410,7 +401,7 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className={'emailCon'}>Email:connect@sliike.com</div>
+              <div className={'emailCon'}>{t('email')}:connect@sliike.com</div>
             </div>
           </div>
         </div>
