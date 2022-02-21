@@ -1,0 +1,76 @@
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 400;
+  src: local('Raleway'), url('./Raleway-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 500;
+  src: local('Raleway'), url('./Raleway-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 700;
+  src: local('Raleway'), url('./Raleway-Bold.ttf') format('truetype');
+}
+
+/* Spartan */
+@font-face {
+  font-family: 'Spartan';
+  font-weight: 100;
+  src: local('Spartan'), url('./spartan/Spartan-Thin.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Spartan';
+  font-weight: 200;
+  src: local('Spartan'),
+    url('./spartan/Spartan-ExtraLight.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Spartan';
+  font-weight: 300;
+  src: local('Spartan'), url('./spartan/Spartan-Light.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Spartan';
+  font-weight: 400;
+  src: local('Spartan'), url('./spartan/Spartan-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Spartan';
+  font-weight: 500;
+  src: local('Spartan'), url('./spartan/Spartan-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Spartan';
+  font-weight: 600;
+  src: local('Spartan'),
+    url('./spartan/Spartan-SemiBold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Spartan';
+  font-weight: 700;
+  src: local('Spartan'), url('./spartan/Spartan-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Spartan';
+  font-weight: 900;
+  src: local('Spartan'), url('./spartan/Spartan-Black.ttf') format('truetype');
+}
+/* Unna */
+@font-face {
+  font-family: 'Unna';
+  font-weight: 400;
+  src: local('Unna'), url('./Unna-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Unna';
+  font-weight: 400;
+  font-style: italic;
+  src: local('Unna'), url('./Unna-Italic.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Unna';
+  font-weight: 700;
+  src: local('Unna'), url('./Unna-Bold.ttf') format('truetype');
+}
