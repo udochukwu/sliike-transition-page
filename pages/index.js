@@ -89,7 +89,7 @@ const Home = () => {
         <div className='section-one'>
           <div>
             <div className={'first-write-up'}>{t('title')}</div>
-            <div className={'secondWriteUp'}>
+            <div className={'second-write-up'}>
               We will be back in XX days XX hours XX mins XX sec
             </div>
           </div>
