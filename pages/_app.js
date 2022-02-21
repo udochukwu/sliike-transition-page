@@ -5,7 +5,9 @@ import '../styles/Home.scss';
 import '../next-i18next.config';
 function MyApp({ Component, pageProps }) {
   const client = new ApolloClient({
-    uri: 'http://localhost:8000/graphql',
+    uri: 'https://api.staging.sliike.com/graphql',
+    // uri: 'http://localhost:8000/graphql',
+    // uri: 'http://localhost:8000/graphql',
     cache: new InMemoryCache()
   });
 

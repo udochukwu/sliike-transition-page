@@ -68,7 +68,6 @@ const Home = () => {
     resolver: yupResolver(schema),
   });
   const watchPersona = watch('persona');
-  console.log(watchPersona, '>>>>>')
   const onSubmit = async (data) => {
     await addToWaitlistMutation({
       variables: {
